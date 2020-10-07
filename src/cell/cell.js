@@ -1,3 +1,47 @@
+/* Cell, developed by SkywalkerSW5 (https://github.com/SkywalkerSW5)
+ 
+ Cell is a group of addons to the Clarity Engine.
+ 
+ 
+ 
+ Cell is licensed under the SPL 3 license, along with the notice down below.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Contents:
+ * 
+ * 		Line 164: Background color of game
+ 
+ 
+ 
+ 
+ 
+ */
+
+
+
+
+
+
+
+
+
+
 /*
 Copyright (c) 2013 Suffick at Codepen (http://codepen.io/suffick) and GitHub (https://github.com/suffick)
 
@@ -28,10 +72,19 @@ var Clarity = function () {
     this.limit_viewport = false;
     this.jump_switch    = 0;
     
+    
+    
+    
     this.viewport = {
         x: 200,
         y: 200
     };
+    
+    
+    
+    
+    
+    
     
     this.camera = {
         x: 0,
@@ -127,6 +180,9 @@ Clarity.prototype.load_map = function (map) {
 
     this.current_map = map;
 
+
+				/* This is the games background color */
+				
     this.current_map.background = map.background || '#333';
     this.current_map.gravity = map.gravity || {x: 0, y: 0.3};
     this.tile_size = map.tile_size || 16;
