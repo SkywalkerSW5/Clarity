@@ -181,9 +181,9 @@ Clarity.prototype.load_map = function (map) {
     this.current_map = map;
 
 
-				/* This is the games background color */
 				
-    this.current_map.background = map.background || '#333';
+				
+    this.current_map.background = map.background || 'black';
     this.current_map.gravity = map.gravity || {x: 0, y: 0.3};
     this.tile_size = map.tile_size || 16;
 
